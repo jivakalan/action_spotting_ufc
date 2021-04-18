@@ -27,8 +27,22 @@ def downloading_video(link):
         video.download(output_path = folderPath)
 
         return videoPath
- 
-yt= YouTube('https://www.youtube.com/watch?v=e89XlkZrnYU').streams.first().download()
-time.sleep(5)
+#https://www.youtube.com/watch?v=e89XlkZrnYU
+#https://www.youtube.com/watch?v=L3sR0-BJQPk
+#https://www.youtube.com/watch?v=MQcXEWPesAw
+#https://www.youtube.com/watch?v=HW1oG4xqzYc
+
+
+for url in video_url:
+    
+    yt= YouTube(url).streams.first().download()
+    time.sleep(5)
+
 video = yt.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first()
 time.sleep(2)
+
+
+video_url =['https://www.youtube.com/watch?v=7pjEWc57anU'
+,'https://www.youtube.com/watch?v=8dunuylUuts'
+,'https://www.youtube.com/watch?v=lmOxyLJTBrM'
+,'https://www.youtube.com/watch?v=OL_IcNrwWQ8','https://www.youtube.com/watch?v=JJB3cLkVHhE','https://www.youtube.com/watch?v=OxHD7I4bXKI','https://www.youtube.com/watch?v=2a0Ul8hRyqk']

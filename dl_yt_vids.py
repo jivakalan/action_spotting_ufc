@@ -27,10 +27,7 @@ def downloading_video(link):
         video.download(output_path = folderPath)
 
         return videoPath
-#https://www.youtube.com/watch?v=e89XlkZrnYU
-#https://www.youtube.com/watch?v=L3sR0-BJQPk
-#https://www.youtube.com/watch?v=MQcXEWPesAw
-#https://www.youtube.com/watch?v=HW1oG4xqzYc
+
 
 
 for url in video_url:
@@ -41,8 +38,12 @@ for url in video_url:
 video = yt.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first()
 time.sleep(2)
 
+video_url =['https://www.youtube.com/watch?v=kB4jgaYYBlI','https://www.youtube.com/watch?v=Ro_zceOYrb0']
+    
+    
+    'https://www.youtube.com/watch?v=U-fhb1RnRzM']
 
-video_url =['https://www.youtube.com/watch?v=7pjEWc57anU'
-,'https://www.youtube.com/watch?v=8dunuylUuts'
-,'https://www.youtube.com/watch?v=lmOxyLJTBrM'
-,'https://www.youtube.com/watch?v=OL_IcNrwWQ8','https://www.youtube.com/watch?v=JJB3cLkVHhE','https://www.youtube.com/watch?v=OxHD7I4bXKI','https://www.youtube.com/watch?v=2a0Ul8hRyqk']
+video_url =['https://www.youtube.com/watch?v=knRMfWDjKZE','https://www.youtube.com/watch?v=RK9Wry-DHew','https://www.youtube.com/watch?v=L3sR0-BJQPk&t=1s','https://www.youtube.com/watch?v=y5tmDY9-BAU']
+
+
+
